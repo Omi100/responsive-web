@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PowerPixel</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header class="background">
+      <nav class="navbar h-nav">
+        <section class="navbar-list">
+          <div class="leftnav v-class">
+            <img src="./img/logo.png" alt="" />
+            <ul class="list">
+              <li class="list-items"><a href="#home">Home</a></li>
+              <li class="list-items"><a href="#about">About</a></li>
+              <li class="list-items"><a href="#serviceoffer">Services</a></li>
+              <li class="list-items"><a href="#contact">contact</a></li>
+            </ul>
+          </div>
+          <div class="rightnav v-class">
+            <div>
+              <input class="input" type="text" />
+            </div>
+            <div>
+              <button class="btn">submit</button>
+            </div>
+          </div>
+        </section>
+        <div class="burger" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </nav>
+    </header>
+    <div class="aboutpage background" id="about">
+        <div class="aboutlist h-about">
+      <div class="leftside">
+        <h1>PowerPixel </h1>
+        <p>Redefining Electronics Excellence**</p>
+        <p>
+Discover PowerPixel, where innovation meets excellence. We specialize in delivering top-tier electronics that elevate your digital experience. With a commitment to quality and customer satisfaction, PowerPixel ensures you stay at the forefront of technology. Join us and explore a world of superior gadgets and devices crafted to enhance every aspect of your life.
+        </p>
+      </div>
+      <div class="rightside">
+        <img src="./img/processor.jpg" alt="aboout" />
+      </div>
+    </div>
+    </div>
+
+    <div id="serviceoffer">
+      <main id="main" >
+       <section id="services">
+        <div class="service">
+            <img src="./img/multipledevices.jpeg" alt="Product Sales">
+            <div class="service-content">
+                <h3>Product Sales</h3>
+                <p>We offer a wide range of electronic products including the latest smartphones, laptops, tablets, and accessories. Our inventory includes top brands and the newest models, ensuring you get the best products at competitive prices.</p>
+                <ul>
+                    <li>Latest smartphones and gadgets</li>
+                    <li>Competitive pricing</li>
+                    <li>Warranty and return policies</li>
+                    <li>Accessories for all devices</li>
+                </ul>
+            </div>
+        </div>
+        <div class="service">
+            <img src="./img/processor.jpg" alt="Repairs and Maintenance">
+            <div class="service-content">
+                <h3>Repairs and Maintenance</h3>
+                <p>Our skilled technicians are here to help with any repairs or maintenance your electronic devices may need. We offer quick turnaround times and use only high-quality parts to ensure your devices function like new.</p>
+                <ul>
+                    <li>Smartphone, laptop, and tablet repairs</li>
+                    <li>Screen replacements</li>
+                    <li>Battery and hardware upgrades</li>
+                    <li>Software troubleshooting and updates</li>
+                </ul>
+            </div>
+        </div>
+   
+        <div class="service">
+            <img src="./img/trade up.jpg" alt="Trade-In and Recycling">
+            <div class="service-content">
+                <h3>Trade-In and Recycling</h3>
+                <p>Upgrade your old devices and contribute to a greener environment with our trade-in and recycling services. We offer great trade-in deals and ensure responsible recycling of electronic waste.</p>
+                <ul>
+                    <li>Trade-in discounts on new purchases</li>
+                    <li>Safe data wiping services</li>
+                    <li>Environmentally-friendly recycling practices</li>
+                    <li>Collection and disposal of old electronics</li>
+                </ul>
+            </div>
+        </div>
+        <div class="service">
+            <img src="./img/support-team.jpg" alt="Consultation and Support">
+            <div class="service-content">
+                <h3>Consultation and Support</h3>
+                <p>Get expert advice on choosing the right electronic products and services. Our knowledgeable staff is here to assist you with any queries and provide support to enhance your shopping experience.</p>
+                <ul>
+                    <li>Product recommendations</li>
+                    <li>Technical support and troubleshooting</li>
+                    <li>In-store and online consultations</li>
+                    <li>After-sales support and services</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+</div>
+<div class="contactus" id="contact"> 
+  <div class="form-container">
+      <h2>Contact Us</h2>
+      <form id="registrationForm">
+          <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name">
+              <div class="error-message" id="nameError">Name must be at least 3 characters long and contain only letters.</div>
+          </div>
+          <div class="form-group">
+              <label for="address">Address</label>
+              <input type="text" id="address" name="address">
+          </div>
+          <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email">
+              <div class="error-message" id="emailError">Please enter a valid email address.</div>
+          </div>
+          <div class="form-group">
+              <label for="mobile">Mobile Number</label>
+              <input type="text" id="mobile" name="mobile">
+              <div class="error-message" id="mobileError">Mobile number must be 10 digits long.</div>
+          </div>
+          <button type="submit" class="submit-btn">Submit</button>
+      </form>
+  </div>
+</div>
+
+<div class="popup" id="popup">
+  <div class="popup-content">
+      <span class="close-btn" id="closeBtn">&times;</span>
+      <p>Form submitted successfully!</p>
+  </div>
+</div>
+<div class="footerbody">
+<footer>
+  <div class="footer-content">
+      <div class="contact-info">
+          <h3>Stay Connected with PowerPixel</h3>
+          <p>Address: <span>Vita,Maharashtra</p>
+          <p>Phone: <span>9021224961</span></p>
+          <p>Email: <span>PowerPixel@gmail.com<span></p>
+      </div>
+      <div class="social-links">
+          <h3>Follow Us:</h3>
+          <ul>
+              <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+          </ul>
+      </div>
+  </div>
+  <div class="copyright">
+      <p>&copy; 2024 PowerPixel. All Rights Reserved.</p>
+  </div>
+</footer>
+</div>
+    <script src="script.js"></script>
+  </body>
+</html>
